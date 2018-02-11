@@ -1,0 +1,41 @@
+.page2.wrapper
+    .container
+        .column.column__1x
+            .subtitle Заголовок слайда
+            .text Ракета-носитель «Энергия» – первая советская ракета, использующая криогенное горючее (водород) на маршевой ступени, и самая мощная из отечественных ракет – суммарная мощность двигателей около 170 миллионов лошадиных сил.
+            .big_title 170 млн
+            .text.text__dark-grey Суммарная мощность двигателей, лошадиных сил
+
+            .title_blue_small Разработка проекта
+
+            .big_title 1976 – 1987
+            .text РН «Энергия» была разработана в научно-производственном объединении (НПО) «Энергия» (ранее ОКБ-1, сейчас ПАО «Ракетно-космическая корпорация "Энергия" имени С. П. Королёва») под руководством генерального конструктора Валентина Петровича Глушко.
+
+        .column.column__2x
+            .rotate
+            .big_title 3D MODEL
+        .column.column__1x
+            .row.row__1x
+
+                .page2__photo(
+                    data-swiper-parallax="-500"
+                )
+                    img(
+                        src="img/objects/glushko.png"
+                        v-on:click.self='photoOpen($event)'
+                    )
+                .text.text__dark-grey.text__modified Валентин Петрович Глушко &mdash; советский инженер и учёный в области ракетно-космической техники
+
+            .row.row__1x
+                .help-link.help-link__right.help-link__right_modified(v-on:click="") Ссылка на сайдбар
+
+            .row.row__2x.row_modified
+                .help-link.help-link__bottom.help-link__bottom_modified1(v-on:click="showModal('popup3')") Схема с синим фоном
+                .help-link.help-link__bottom.help-link__bottom_modified2(v-on:click="") Ссылка на попап
+                .video-link(v-on:click="showModal('popupVideo2')") Ссылка на попап с видео
+
+        .hand-to-left__block
+    .bg-crosses(
+    data-swiper-parallax="-350"
+    )
+    .bg-lines

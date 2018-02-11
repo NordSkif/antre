@@ -1,0 +1,53 @@
+.page1.wrapper
+    .container
+        .column.column__1x
+            .subtitle(
+                data-swiper-parallax="-700"
+            ) Заголовок слайда
+
+            .title_blue_small(
+                data-swiper-parallax="-800"
+            ) Начало разработки
+
+            .big_title(
+                data-swiper-parallax="-500"
+            ) 8 ноября 1976 года
+            .text(
+                data-swiper-parallax="-350"
+            ) Разработка &laquo;Бурана&raquo; началась в 1976 году под руководством главного конструктора Глеба Евгеньевича Лозино-Лозинского. Он же в 1960-е годы работал над проектом многоразовой авиационно-космической системы &laquo;Спираль&raquo;.
+
+            .page1__photo(
+                data-swiper-parallax="-500"
+            )
+                img(
+                    src="img/objects/lozin.png"
+                    v-on:click.self='photoOpen($event)'
+                )
+
+        .column.column__2x
+            .rotate
+
+        .column.column__1x
+            .text.text__modified(
+                data-swiper-parallax="-350"
+            ) &laquo;Буран&raquo; &mdash; это первый в мире многоразовый орбитальный корабль-ракетоплан, совершивший полностью автономный, без экипажа, старт, полет и приземление.
+
+            .help-link.help-link__right.right-block(
+                v-on:click="showModal('sidebar1')"
+                data-swiper-parallax="-500"
+            ) Ссылка на сайдбар 1
+
+            .help-link.help-link__bottom.right-block(
+                v-on:click="showModal('popup1')"
+                data-swiper-parallax="-500"
+            ) Ссылка на попап 1
+
+            .help-link.help-link__bottom.right-block(
+                v-on:click="showModal('popup2')"
+                data-swiper-parallax="-500"
+            ) Ссылка на попап 2
+        .hand__block
+    .bg-crosses(
+        data-swiper-parallax="-350"
+    )
+    .bg-lines

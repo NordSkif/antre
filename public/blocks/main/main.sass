@@ -1,0 +1,28 @@
+.main
+    &:before
+        content: ''
+        display: block
+        background: url(../img/objects/main-bg.png) 0 0 no-repeat
+        width: 1793px
+        height: 905px
+        position: absolute
+        left: 60px
+        top: 54px
+        z-index: -1
+
+    .subtitle
+        @include widthFix(308px)
+        margin-top: 84px
+        margin-bottom: 60px
+
+    .text
+        width: 340px
+        height: 220px
+
+    .link
+        margin-top: 629px
+        &:after
+            top: 60px
+        .subtitle
+            margin-top: 20px
+            margin-bottom: 0
