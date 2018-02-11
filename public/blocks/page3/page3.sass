@@ -1,25 +1,13 @@
-.sensei-foto
-    width: 750px
-    display: block
-    float: left
-
-.sensei-100
-    width: 100%
-
-
-.sensei-foto img
-    max-width: 250px
-
 .page2
     .subtitle
-
+        margin: 49px 0 50px 0
     .text
         @include widthFix(392px)
         margin-bottom: 30px
         margin-top: 30px
-        align-items: left
 
     .text__dark-grey
+        @include widthFix(240px)
         margin-top: 9px
         &_modified
             @include widthFix(180px)
@@ -30,8 +18,8 @@
         margin-bottom: 10px
 
     &__photo
-        margin-top: -3px
-        width: 100% //142 × 193
+        margin-top: 45px
+        width: 90%
         height: 193px
         position: relative
         float: left
@@ -46,6 +34,13 @@
             height: 193px
             background-image: url("../img/objects/glushko.png")
 
+    .page2__photo img
+           max-width: 250px !important
+
+    .sensei-foto
+        width: 100%
+        display: block
+        float: left
 
     .help-link
         width: 332px
